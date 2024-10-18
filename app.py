@@ -70,9 +70,14 @@ days = form.number_input(
     "Trip Duration (Days)", step=1, min_value=1, max_value=12
 )
 
+location = form.text_input(
+    "Enter your location address", 
+)
+
 # Add a submit button to the form
 submitted = form.form_submit_button("Submit")
 
 # Check if the form has been submitted
 if submitted:
     st.write(f"Trip duration: {days} days")
+    st.write(f"Address: {location}")
