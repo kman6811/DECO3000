@@ -23,5 +23,5 @@ if submitted:
         st.write("Please select both start and end dates.")
     
     # Display additional information
-    st.write(f"Trip duration: {days} days")
+    st.write(f"Trip duration: {delta_days} days")
     st.write(f"Address: {location}")
